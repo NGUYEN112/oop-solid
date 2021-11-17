@@ -1,0 +1,139 @@
+.container {
+    width: 80%;
+    margin: auto;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+}
+table {
+    padding: 0 20%;
+    width: 100%;
+    border-collapse: collapse;
+}
+table, td, th {
+    border: 1px solid black;
+  }
+.create {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+thead th:first-child {
+    width: 10%;
+}
+
+thead th:nth-child(2){
+    width: 40%;
+}
+.func {
+    position: relative;
+    height: 100px;  
+}
+
+.clearfix {
+    clear: both;
+    content: ".";
+    display: block;
+    width: 0px;
+    height: 0px;
+}
+.func a {
+    padding: 10px;
+    cursor: pointer;
+    background-color: blueviolet;
+    color: white;
+    text-decoration: none;
+}
+
+.func a{
+    position: absolute;
+    left: 0;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+.func button {
+    position: absolute;
+    right: 0;
+    padding: 10px;
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    font-size: 15px;
+    border-radius: 5px;
+
+}
+
+form {
+    padding: 0 20%;
+    
+}
+
+form label {
+    width: 30%;
+
+    font-size: 20px;
+}
+
+form input,select {
+    width: 65%;
+    background-color: rgb(232, 240, 254);
+    border: none;
+    border-radius: 10px;
+    height: 30px;
+}
+
+.input-form {
+    margin-bottom: 20px;
+}
+
+
+
+/* Client */
+
+
+
+.categories-list {
+    display: flex;
+    list-style: none;
+    padding: 0 20%;
+    margin: 0;
+}
+.categories-list li {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 20px;
+    width: 25%;
+    border: solid 1px #b6b3b3;
+    background-color: #dddddd;
+    cursor: pointer;
+}
+
+.categories-list li.active {
+    background-color: white;
+}
+
+.product-list {
+    border: solid 1px #b6b3b3;
+    padding: 0 20%;
+}
+.product-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.product {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: solid 1px #b6b3b3;
+}
+
+.product:last-child {
+    border: none;
+}
