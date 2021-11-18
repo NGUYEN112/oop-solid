@@ -92,7 +92,29 @@ form input,select {
 }
 
 
+.route {
+    padding: 0 20%;
+    display: flex;
+    list-style: none;
+}
 
+.route li {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 20px;
+    width: 33%;
+    border: solid 1px #b6b3b3;
+    background-color: #dddddd;
+    cursor: pointer;
+}
+
+.route li a {
+    text-decoration: none;
+}
+
+.route li.active-route {
+    background-color: white;
+}
 /* Client */
 
 

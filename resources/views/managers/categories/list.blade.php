@@ -3,6 +3,7 @@
 <h2>Category Manager</h2>
 <div class="create"><a href="category/create" title="Thêm mới" style="position: absolute;right: 35px;top: 22px;"><i class="fas fa-plus-square text-success" style="font-size: 24px"></i></a>
 </div>
+
 <table>
     <thead>
         <tr>

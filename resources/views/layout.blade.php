@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="{{asset('/storage/styles.css')}}">
 </head>
 <body class="container ">
+    <ul class="route">
+        <li class="{{ (request()->segment(1) == '') ? 'active-route' : '' }}"><a href="/">Home</a></li>
+        <li class="{{ (request()->segment(2) == 'category') ? 'active-route' : '' }}"><a href="/manager/category">Category Manager</a></li>
+        <li class="{{ (request()->segment(2) == 'product') ? 'active-route' : '' }}"><a href="/manager/product">Product Manager</a></li>
+    </ul>
     @yield('manager-content')
 </body>
 </html>

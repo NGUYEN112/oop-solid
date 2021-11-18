@@ -12,6 +12,11 @@
 
 <body class="container">
     <h2>Welcome</h2>
+    <ul class="route">
+        <li class="{{ (request()->segment(1) == '') ? 'active-route' : '' }}"><a href="'/">Home</a></li>
+        <li><a href="/manager/category">Category Manager</a></li>
+        <li><a href="/manager/product">Product Manager</a></li>
+    </ul>
     <div class="categories">
         <ul class="categories-list">
             @foreach($categories as $key => $category)
